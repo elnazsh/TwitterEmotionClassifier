@@ -4,10 +4,8 @@ negationlist=( none noone nothing nobody neither nowhere never don\'t doesn\'t d
 
 for m in "${negationlist[@]}"
 do
-	grep -w $m -c ~/Desktop/Courses/Team\ Lab/nohashtag/train-onlyneg/*.csv
-	sed -n "/$m/ !d" ~/Desktop/Courses/Team\ Lab/nohashtag/train-onlyneg/*.csv
+	grep -w -h $m ~/Desktop/Courses/TeamLab/nohashtag/train/*.csv > ~/Desktop/Courses/TeamLab/nohashtag/train-onlyneg/$m.csv
 	
-	grep -w $m -c ~/Desktop/Courses/Team\ Lab/nohashtag/test-onlyneg/*.csv
-	sed -n "/$m/ !d" ~/Desktop/Courses/Team\ Lab/nohashtag/test-onlyneg/*.csv
+	grep -w -h $m ~/Desktop/Courses/TeamLab/nohashtag/test/*.csv > ~/Desktop/Courses/TeamLab/nohashtag/test-onlyneg/$m.csv
 
 done
