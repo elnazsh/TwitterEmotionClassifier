@@ -1,0 +1,13 @@
+#!/bin/bash
+
+negationlist=( none noone nothing nobody neither nowhere never don\'t doesn\'t didn\'t aren\'t isn\'t wasn\'t weren\'t haven\'t hasn\'t hadn\'t won\'t shouldn\'t wouldn\'t can\'t couldn\'t ain\'t dont doesnt didnt arent isnt wasnt werent havent hasnt hadnt wont shouldnt wouldnt cant couldnt aint not )
+
+for m in "${negationlist[@]}"
+do
+	grep -w $m -c ~/Desktop/Courses/Team\ Lab/nohashtag/train-onlyneg/*.csv
+	sed -n "/$m/ !d" ~/Desktop/Courses/Team\ Lab/nohashtag/train-onlyneg/*.csv
+	
+	grep -w $m -c ~/Desktop/Courses/Team\ Lab/nohashtag/test-onlyneg/*.csv
+	sed -n "/$m/ !d" ~/Desktop/Courses/Team\ Lab/nohashtag/test-onlyneg/*.csv
+
+done
