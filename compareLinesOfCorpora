@@ -3,3 +3,7 @@
 wc -l ~/Desktop/Courses/TeamLab/nohashtag/test-onlyneg/*.csv
 wc -l ~/Desktop/Courses/TeamLab/nohashtag/test-noneg/*.csv
 wc -l ~/Desktop/Courses/TeamLab/nohashtag/test/*.csv
+
+wc -l ~/Desktop/Courses/TeamLab/nohashtag/train-onlyneg/*.csv
+wc -l ~/Desktop/Courses/TeamLab/nohashtag/train-noneg/*.csv
+wc -l ~/Desktop/Courses/TeamLab/nohashtag/train/*.csv
