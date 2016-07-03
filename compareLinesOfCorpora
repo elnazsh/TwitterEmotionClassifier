@@ -1,5 +1,5 @@
 #!/bin/bash
 
-wc -l ~/Desktop/Courses/Team\ Lab/nohashtag/test-onlyneg/*.csv
-wc -l ~/Desktop/Courses/Team\ Lab/nohashtag/test-noneg/*.csv
-wc -l ~/Desktop/Courses/Team\ Lab/nohashtag/test/*.csv
+wc -l ~/Desktop/Courses/TeamLab/nohashtag/test-onlyneg/*.csv
+wc -l ~/Desktop/Courses/TeamLab/nohashtag/test-noneg/*.csv
+wc -l ~/Desktop/Courses/TeamLab/nohashtag/test/*.csv
